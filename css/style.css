@@ -2,6 +2,142 @@
 Author: Rajesh-Doot
 File Description: Main CSS file of the template*/
 
+/* ============================
+   OFFCANVAS MENU BEAUTIFUL UI
+============================ */
+
+/* Offcanvas panel */
+.digiofcanvas {
+  background: #ffffff;
+  padding: 25px;
+  width: 330px !important;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.12);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Close button area */
+.cbtn .btnclose .btn-close {
+  filter: brightness(0);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.cbtn .btnclose .btn-close:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/* Sidebar Title */
+.mobile-nav h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+/* Main UL Styling */
+.mobile-nav ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  list-style: none;
+}
+
+/* Menu Links */
+.mobile-nav ul li a {
+  display: block;
+  padding: 7px 0;
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.mobile-nav ul li a:hover {
+  color: #0d6efd;
+  padding-left: 6px;
+  background: rgba(13,110,253,0.08);
+}
+
+/* Category Headings like Products, Services, Industry */
+.mobile-nav ul .fw-bold {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #0d6efd;
+  letter-spacing: 0.5px;
+}
+
+.mobile-nav ul ul {
+  margin-top: 5px;
+  border-left: 2px solid #0d6efd33;
+  padding-left: 15px;
+}
+
+/* Sub-links under dropdowns */
+.mobile-nav ul ul li a {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* ============================
+   GET IN TOUCH SECTION
+============================ */
+
+.getintouchblock {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.getintouchblock h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.getintouchblock p {
+  font-size: 14px;
+  color: #555;
+}
+
+.getintouchinfo a {
+  font-size: 14px;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.getintouchinfo a span {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.icondive img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* ============================
+   SOCIAL MEDIA ICONS
+============================ */
+
+.social-media-linkz a {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-media-linkz a:hover {
+  color: #0d6efd;
+  transform: scale(1.1);
+}
+
+
 /* Mega Dropdown */
 .dropdown-mega .dropdown-menu {
   width: 100%;
