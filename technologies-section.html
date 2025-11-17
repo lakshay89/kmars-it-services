@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technologies We Work With</title>
+
+  <!-- Bootstrap 4.6 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+2  <style>
+    /* Section layout */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #fff;
+      color: #222;
+      padding: 40px 15px;
+    }
+
+    .tech-section {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 28px;
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+
+    /* Nav pills centered with larger clickable area */
+    .nav-tech {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+
+    .nav-tech .nav-link {
+      font-size: 17px;
+      padding: 10px 22px;
+      color: #333;
+      border-radius: 0;
+      transition: color .15s ease;
+      position: relative;
+    }
+
+    /* active pill text color and red underline */
+    .nav-tech .nav-link.active {
+      color: #e53935;
+      background: transparent;
+    }
+
+    .nav-tech .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      bottom: -8px;
+      height: 3px;
+      background: #e53935;
+      border-radius: 3px;
+    }
+
+    /* Cards styling */
+    .tech-box {
+      background: #f3f3f3;
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform .22s ease, box-shadow .22s ease;
+      margin-bottom: 16px;
+      border: 1px solid #e6e6e6;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tech-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    }
+
+    .tech-box img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .tech-name {
+      margin: 0;
+      font-weight: 600;
+      color: #222;
+      font-size: 15px;
+    }
+
+    /* spacing of rows so cards look neat and evenly spaced */
+    .tech-row {
+      margin-top: 6px;
+    }
+
+    /* small screens tweak: spacing around nav underline */
+    @media (max-width: 575.98px) {
+      .nav-tech .nav-link {
+        font-size: 15px;
+        padding: 8px 12px;
+      }
+      .nav-tech .nav-link.active::after {
+        left: 25%;
+        right: 25%;
+      }
+      .tech-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="tech-section">
+    <h2 class="section-title">Technologies We Work With</h2>
+
+    <!-- TABS / PILLS (centered) -->
+    <ul class="nav nav-pills nav-tech" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="frontend-tab" data-toggle="pill" href="#frontend" role="tab" aria-controls="frontend" aria-selected="true">Front-End</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="mobile-tab" data-toggle="pill" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="database-tab" data-toggle="pill" href="#database" role="tab" aria-controls="database" aria-selected="false">Database</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="cms-tab" data-toggle="pill" href="#cms" role="tab" aria-controls="cms" aria-selected="false">CMS</a>
+      </li>
+    </ul>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- FRONTEND -->
+      <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
+        <div class="row tech-row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=HTML';">
+              <p class="tech-name">HTML5</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="Bootstrap" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=BS';">
+              <p class="tech-name">Bootstrap</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=React';">
+              <p class="tech-name">React</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=NG';">
+              <p class="tech-name">Angular</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue.js" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Vue';">
+              <p class="tech-name">Vue.js</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=TS';">
+              <p class="tech-name">TypeScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+        <div class="row tech-row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/android.svg" alt="Android" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Android';">
+              <p class="tech-name">Android</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/apple-14.svg" alt="iOS" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=iOS';">
+              <p class="tech-name">iOS</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/flutter.svg" alt="Flutter" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Flutter';">
+              <p class="tech-name">Flutter</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/react-native-1.svg" alt="React Native" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=RN';">
+              <p class="tech-name">React Native</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DATABASE -->
+      <div class="tab-pane fade" id="database" role="tabpanel" aria-labelledby="database-tab">
+        <div class="row tech-row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg" alt="MySQL" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=MySQL';">
+              <p class="tech-name">MySQL</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Mongo';">
+              <p class="tech-name">MongoDB</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=PG';">
+              <p class="tech-name">PostgreSQL</p>
+            </div>
+          </div>
+
+          <!-- optional extra DB card (keeps layout tidy across breakpoints) -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Firebase" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Firebase';">
+              <p class="tech-name">Firebase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CMS -->
+      <div class="tab-pane fade" id="cms" role="tabpanel" aria-labelledby="cms-tab">
+        <div class="row tech-row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/wordpress-icon.svg" alt="WordPress" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=WP';">
+              <p class="tech-name">WordPress</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Shop';">
+              <p class="tech-name">Shopify</p>
+            </div>
+          </div>
+
+          <!-- Extra CMS placeholders to keep visual balance -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/drupal-6.svg" alt="Drupal" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Drupal';">
+              <p class="tech-name">Drupal</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="tech-box">
+              <img src="https://cdn.worldvectorlogo.com/logos/magento.svg" alt="Magento" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=Magento';">
+              <p class="tech-name">Magento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Required JS: jQuery, Popper.js, Bootstrap JS (Bootstrap 4) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Small enhancement: ensure keyboard accessibility focus shows underline if tabbed
+    $(document).ready(function(){
+      $('.nav-tech .nav-link').on('shown.bs.tab', function (e) {
+        // nothing needed, CSS handles active underline
+      });
+    });
+  </script>
+</body>
+</html>

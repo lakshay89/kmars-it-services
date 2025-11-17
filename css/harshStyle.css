@@ -1,0 +1,54 @@
+.grid-1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.grid-1 img{
+    height: 100px;
+    object-fit: contain;
+
+}
+.grid-1 .item{
+    padding: 1rem;
+}
+
+.dsk-logo .nav-brand img{
+    padding: 0.8rem 0rem;
+}
+
+
+.map-embed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*===========*/
+
+
+.full-image-card {
+    margin-top: 60px;
+}
+.full-image-card .image-div{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.full-image-card .image-div img {
+    width: 100%; /* Make sure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 10px solid #0000000d; /* 10px border, adjust color as needed */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .full-image-card .image-div img:hover {
+    border-color: #09569f; /* Change border color on hover */
+  }
+
+
+
+
+.full-image-card .image-div img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
